@@ -1,0 +1,56 @@
+            body {
+                font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background-size: 400% 400%;
+                height: 100vh;
+            }
+
+            /*Titre d'accueil*/
+
+            .titre_accueil {
+                color: #ffec40;
+                background-color: rgb(95, 53, 150);
+                padding: 10px;
+                width: 200px;
+                margin: 20px auto; /*Centre le titre d'accueil*/
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+                text-align: center;
+                margin-top: 40px;
+                border-radius: 10px;
+            }
+
+            /*Description d'accueil*/
+
+            .description_accueil {
+                color: #333;
+                background-color: #6f17a17a;
+                color: #e6d863;
+                padding: 15px;
+                width: 80%;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+                margin: 20px auto; /*Centre la description d'accueil*/
+                text-align: center; /*Centre le texte dans le card de la description d'accueil*/
+                border-radius: 10px;
+            }
+
+            /*Menu déroulant*/
+
+            .deroulant {
+                position: relative;
+                display: inline-block;
+                margin: 20px;
+            }
+
+            .sous-menu{
+                display: none;
+                position: absolute;
+                background-color: #6f17a17a;
+                color: #e6d863;
+                padding: 10px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+                border-radius: 10px;
+                list-style: none;
+            }
+
+            .sous-menu.actif{
+                display: block;
+            }
