@@ -1,0 +1,155 @@
+
+
+/*Accueil - Ma Chaîne YouTube*/
+
+
+/*Fond d'écran avec un dégradé animé*/
+
+body {
+                font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background: linear-gradient(45deg, rgba(255, 255, 0, 0.74), rgba(128, 0, 128, 0.685), rgba(192, 197, 117, 0.548));
+                background-size: 400% 400%;
+                animation: gradient 20s ease infinite;
+                height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*Titre d'accueil*/
+
+.titre_index {
+                color: #ffec40;
+                background-color: rgb(115, 54, 128);
+                padding: 20px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+                text-align: center;
+                margin-top: 40px;
+                border-radius: 100px;
+}
+
+/*Profil YouTube*/
+
+.profil_youtube {
+                display: flex;
+                align-items: center;
+                margin-top: 0px;
+                width: 75px;
+                border-radius: 30px;
+}
+
+.nom_profil {
+                width: 400px; /*Taille du nom du profil*/
+                height: auto;
+                margin-left: 100px; /*Met le nom du profil vers la droite*/
+                margin-top: -50px; /*Met le le nom du profil à côté de l'image de profil*/
+                font-size: 20px;
+                color: #ddccdd; /*Couleur du nom du profil*/
+                background-color: rgb(115, 54, 128); /*Couleur de fond du nom du profil*/
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726); /*Ombre du nom du profil*/
+                padding: 5px 10px; /*Espace entre le texte et les bords du nom du profil*/
+                border-radius: 15px; /*Bord arrondi du nom du profil*/
+}
+
+/*Onglets de navigation*/
+
+.container_onglets {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+}
+
+.onglet {
+                margin: 0 10px;
+                padding: 10px 20px;
+                background-color: rgb(115, 54, 128);
+                color: #ddccdd;
+                text-decoration: none;
+                border-radius: 15px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+}
+
+.onglet:hover {
+                background-color: #ffec40;
+                color: #000;
+}
+
+/* Panneau de contenu affiché sous les onglets */
+
+.panel {
+                max-width: 100%;
+                margin: 20px auto;
+                background-color: linear-gradient(45deg, rgba(255, 255, 0, 0.74), rgba(128, 0, 128, 0.685), rgba(192, 197, 117, 0.548));
+                color: #111;
+                padding: 20px;
+                border-radius: 12px;
+}
+
+.onglet.active {
+                background-color: #ffec40;
+                color: #000;
+                box-shadow: none;
+}
+
+/*Contenu de la section Vidéos*/
+
+        .titre_videos {
+            text-align: center;
+            background-color: rgb(115, 54, 128);
+            border-radius: 150px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+            margin-top: 20px;
+            font-size: 24px;
+            color: #e5e759;
+            padding: 10px;
+        }
+        .container_videos {
+            display: flexbox;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            width: 100%;
+            height: 300px;
+        }
+        
+        iframe {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+/*Contenu de la section Playlists*/
+
+        .titre_playlists {
+            text-align: center;
+            background-color: rgb(115, 54, 128);
+            border-radius: 150px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+            margin-top: 20px;
+            font-size: 24px;
+            color: #e5e759;
+            padding: 10px;
+        }
+
+        .container_playlists {
+            display: flexbox;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
